@@ -1,9 +1,14 @@
 html, body {
     color: white;
     margin: 0;
-    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    background-color: black;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
     font-size: 16px;
+    background-color: black;
+    direction: ltr;
+    /* for test */
+    /* background-color: rgb(167, 163, 163); */
+
 }
 
 * {
@@ -15,13 +20,30 @@ header {
     height: 100vh;
 }
 
+.nfHeader {
+    background: 0 0;
+    border: 0;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+
+.nfHeader.signupBasicHeader{
+    height: 90px;
+}
+
+.svg-nfLogo {
+    text-decoration: none;
+    vertical-align: middle;
+}
+
 nav img {
     width: 167px;
     height: 45px;
     vertical-align: middle;
 }
 
-nav a.logo {
+nav .logo {
     display: inline-block;
     line-height: 120px;
     margin-left: 2%;
@@ -36,7 +58,7 @@ nav .signin {
     float: right;
     background-color: #e50914;
     line-height: normal;
-    margin-top: 18px;
+    margin-top: 25px;
     margin-right: 3%;
     padding: 10px 20px;
     font-weight: 400;
@@ -46,18 +68,113 @@ nav .signin {
 }
 
 .pitch {
-    margin: 0 3%;
+    /* margin: 0 3%; */
     position: absolute;
     top: 35%;
     font-size:1.8vw;
+    width: 100%;
+    text-align: center;
 }
 
 .pitch__title {
     font-size: 3em;
-    margin: 0 0 0.2em;
+    margin: 0 0 0.5em;
     font-weight: 700;
+    text-shadow: 1px, 1px, 5px, rgb(0, 0, 0);
 }
 
 .pitch__subtitle {
-    margin: 0 0 .5em;
+    margin: 0 0 1em;
+    letter-spacing: 1.5px;
+    font-size: 1.1em;
+}
+
+.btn {
+    font-size: 1em;
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin: .5em .5em .5em 0;
+    padding: 28px 2em;
+    color: white;
+    background-color: #e50914;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+    user-select: none;
+    text-align: center;
+    border: 0;
+}
+
+nav .signin:hover, .btn:hover {
+    background-color: #ff000d;
+}
+
+#features > nav {
+    padding-top: 35px;
+    background-color: #141414;
+    border-bottom: 2px solid #3d3d3d;
+}
+
+#features > nav a {
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+    font-weight: bold;
+    color: #777;
+    height: 125px;
+    line-height: 20px;
+}
+
+#features > nav a:hover {
+    color: white;
+    /* display: inline; */
+}
+
+#features > nav a img {
+    height: 49px;
+}
+
+#features > nav a h2 {
+    margin: 10px 0 0;
+    font-size: 1em;
+}
+
+.columns {
+    display: flex;
+}
+
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.size-80 {
+    width: 80%;
+}
+
+#features > nav a:hover {
+    color: white;
+}
+
+#features > nav a.is-selected {
+    /* selected color at the bottom */
+    border-bottom: 5px solid #e50914;
+    color: #ffffff;
+}
+
+#features > article > section {
+    display: none;
+    padding: 40px 0;
+}
+
+#features > article > section.is-selected {
+    display: block;
 }
