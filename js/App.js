@@ -1,7 +1,8 @@
 $(function() {
+    // icon selects
     var tabs = $('#features > nav a');
     var tabsContent = $('#features > article > section');
-  
+    
     tabs.click(function(e) {
       e.preventDefault();
   

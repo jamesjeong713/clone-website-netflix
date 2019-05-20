@@ -23,9 +23,9 @@ header {
 .nfHeader {
     background: 0 0;
     border: 0;
-    position: absolute;
+    /* position: absolute;
     z-index: 5;
-    width: 100%;
+    width: 100%; */
 }
 
 .nfHeader.signupBasicHeader{
@@ -35,18 +35,32 @@ header {
 .svg-nfLogo {
     text-decoration: none;
     vertical-align: middle;
+    fill: #e50914;
+    display: inline-block;
+    line-height: 90px;
 }
 
 nav img {
-    width: 167px;
+    width: 50%;
     height: 45px;
-    vertical-align: middle;
+    /* width: 167px;
+    height: 45px; */
 }
 
-nav .logo {
+.logo {
+    position: absolute;
     display: inline-block;
     line-height: 120px;
     margin-left: 2%;
+}
+
+@media(min-width:1250px) {
+    .logo {
+        /* position: relative; */
+        display: inline-block;
+        line-height: 120px;
+        margin-left: 45%;
+    }
 }
 
 header nav {
