@@ -1,8 +1,8 @@
 # Clone Netflix
-This clone coding is to practice html and css.
+This clone coding of index page for netflix is to practice html and css.
 I have a plan to practice 3 times after I finish this.
 
-1st FINISH - May 12, 2019
+1st FINISH - May 20, 2019
 
 1st Practice - May 16, 2019
 
